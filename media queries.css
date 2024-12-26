@@ -1,21 +1,20 @@
-@media screen and (max-width:800px) {
-    .hideonmobile{
-        display: none;
-    }
-    .showonmobile{
-        display: block;
-        font-size: 2.8vw;
-    }
-    .sectionmain img{
-        display: block;
-        
-    }
+@media screen and (max-width: 800px) {
+  .hideonmobile {
+    display: none;
+  }
+  .showonmobile {
+    display: block;
+    font-size: 2.8vw;
+  }
+  .sectionmain img {
+    display: block;
+  }
 }
-@media screen and (max-width:1600px) {
-    .nav-img{
-        height: 8vh;
-    }
-    nav li{
-        font-size: 2vw;
-    }
+@media screen and (max-width: 1600px) {
+  .nav-img {
+    height: 8vh;
+  }
+  nav li {
+    font-size: 2vw;
+  }
 }
