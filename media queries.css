@@ -9,6 +9,21 @@
   .sectionmain img {
     display: block;
   }
+  .floatl,
+  .floatr {
+    height: auto;
+    width: 60vw;
+  }
+  p {
+    font-size: 5vw;
+  }
+  .card {
+    width: 55vw;
+    height: 50vh;
+  }
+  .card-container {
+    display: block;
+  }
 }
 @media screen and (max-width: 1600px) {
   .nav-img {
