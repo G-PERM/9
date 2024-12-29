@@ -31,7 +31,9 @@
   }
 }
 @media screen and (max-width: 1940px){
-    .card-container {
-      display: block;
+  .card{
+    width: 60vw;
+    height: 40vh;
+    display: block;
   }
 }
