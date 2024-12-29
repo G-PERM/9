@@ -19,7 +19,7 @@
   }
   .card {
     width: 55vw;
-    height: 50vh;
+    height: 75vh;
   }
   .card-container {
     display: block;
@@ -31,5 +31,11 @@
   }
   nav li {
     font-size: 2vw;
+  }
+}
+@media screen and (min-width: 800px){
+    .card {
+    width: 55vw;
+    height: 40vh;
   }
 }
