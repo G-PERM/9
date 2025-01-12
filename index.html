@@ -12,8 +12,8 @@
     <nav>
       <ul class="sidebar">
         <li class="showonmobile" onclick="HideSidebar()">
-          <a href="#"
-            ><svg
+          <a>
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
@@ -26,22 +26,50 @@
             </svg>
           </a>
         </li>
-        <li class="showonmobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="29px" fill="undefined"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
-        <li class="showonmobile"><a href="#">Equipments</a></li>
-        <li class="showonmobile"><a href="#">Courts</a></li>
-        <li class="showonmobile"><a href="#">Contact Us</a></li>
+        <li class="showonmobile">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="29px"
+              fill="undefined"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="showonmobile"><a>Equipments</a></li>
+        <li class="showonmobile"><a>Courts</a></li>
+        <li class="showonmobile"><a>Contact Us</a></li>
       </ul>
       <ul>
         <li>
-          <a href="#"><img src="schhol LOGO.avif" alt="" class="nav-img" /></a>
+          <a><img src="schhol LOGO.avif" alt="" class="nav-img" /></a>
         </li>
-        <li class="hideonmobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="29px" fill="undefined"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
-        <li class="hideonmobile"><a href="#">Equipments</a></li>
-        <li class="hideonmobile"><a href="#">Courts</a></li>
-        <li class="hideonmobile"><a href="#">Contact Us</a></li>
+        <li class="hideonmobile">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="29px"
+              fill="undefined"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="hideonmobile"><a>Equipments</a></li>
+        <li class="hideonmobile"><a>Courts</a></li>
+        <li class="hideonmobile"><a>Contact Us</a></li>
         <li class="showonmobile" onclick="ShowSidebar()">
-          <a href="#"
-            ><svg
+          <a>
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
@@ -102,33 +130,128 @@
           </p>
         </div>
       </main>
-      <div class="card-container">
-        <div class="card">
-          <h2>CARD</h2>
+      <div class="quote-mastercontainer">
+        <button onclick=" previousQuote(quoteContainer, quoteContainerWidth)">
+          &lt;
+        </button>
+        <div class="quote-container">
+          <div class="quote">
+            <img src="person.png" alt="Person" title="Person" class="person" />
+            <div class="quote-position">
+              Position<span class="quote-text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                dignissimos eaque corporis saepe exercitationem dolores nisi
+                veniam facere.</span
+              >
+            </div>
+          </div>
+          <div class="quote">
+            <img src="person.png" alt="Person" title="Person" class="person" />
+            <div class="quote-position">
+              Position<span class="quote-text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                dignissimos eaque corporis saepe exercitationem dolores nisi
+                veniam facere.</span
+              >
+            </div>
+          </div>
+          <div class="quote">
+            <img src="person.png" alt="Person" title="Person" class="person" />
+            <div class="quote-position">
+              Position<span class="quote-text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                dignissimos eaque corporis saepe exercitationem dolores nisi
+                veniam facere.</span
+              >
+            </div>
+          </div>
+          <div class="quote">
+            <img src="person.png" alt="Person" title="Person" class="person" />
+            <div class="quote-position">
+              Position<span class="quote-text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                dignissimos eaque corporis saepe exercitationem dolores nisi
+                veniam facere.</span
+              >
+            </div>
+          </div>
+          <div class="quote">
+            <img src="person.png" alt="Person" title="Person" class="person" />
+            <div class="quote-position">
+              Position<span class="quote-text"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                dignissimos eaque corporis saepe exercitationem dolores nisi
+                veniam facere.</span
+              >
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h2>CARD</h2>
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <h2>CARD</h2>
-        </div>
-        <div class="card">
-          <h2>CARD</h2>
-        </div>
+        <button onclick="nextQuote(quoteContainer, quoteContainerWidth)">
+          &gt;
+        </button>
       </div>
     </section>
-    <footer></footer>
-
     <script>
       function ShowSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "flex";
+        let sidebar = document.getElementsByClassName("sidebar")[0];
+        sidebar.style.right = "0";
+        let sideblur = document.getElementsByClassName("sideblur")[0];
+        sideblur.style.display = "block";
+        sideblur.style.backdropFilter = "brightness(50%)";
+        let sidebarButton =
+          document.getElementsByClassName("sidebar-on-button")[0];
+        sidebarButton.style.display = "none";
+        let body = document.querySelector("body");
+        body.style.overflow = "hidden";
       }
       function HideSidebar() {
-        const sidebar = document.querySelector(".sidebar");
-        sidebar.style.display = "none";
+        let sidebar = document.getElementsByClassName("sidebar")[0];
+        sidebar.style.right = "-50%";
+        let sideblur = document.getElementsByClassName("sideblur")[0];
+        sideblur.style.display = "none";
+        sideblur.style.backdropFilter = "brightness(100%)";
+        let sidebarButton =
+          document.getElementsByClassName("sidebar-on-button")[0];
+        sidebarButton.style.display = "grid";
+        let body = document.querySelector("body");
+        body.style.overflow = "scroll";
+      }
+      setInterval(() => {
+        AutoScrollQuote(quoteContainer, quoteContainerWidth);
+      }, 30000);
+      const quoteContainer =
+        document.getElementsByClassName("quote-container")[0];
+      const quoteContainerWidth = Math.round(screen.width / 4);
+      function previousQuote(quoteContainer, quoteContainerWidth) {
+        quoteContainer.scrollBy({
+          left: -quoteContainerWidth,
+          behavior: "smooth",
+        });
+      }
+      function nextQuote(quoteContainer, quoteContainerWidth) {
+        quoteContainer.scrollBy({
+          left: quoteContainerWidth,
+          behavior: "smooth",
+        });
+      }
+      function autoScrollQuote(quoteContainer, quoteContainerWidth) {
+        const maxScrollLeft =
+          quoteContainer.scrollWidth - quoteContainer.clientWidth;
+        const currentScrollLeft = quoteContainer.scrollLeft;
+
+        if (currentScrollLeft < maxScrollLeft) {
+          quoteContainer.scrollBy({
+            left: quoteContainerWidth,
+            behavior: "smooth",
+          });
+        } else {
+          quoteContainer.scrollLeft = 0;
+        }
+      }
+      function AutoScrollQuote(quoteContainer, quoteContainerWidth) {
+        if (quoteContainer) {
+          autoScrollQuote(quoteContainer, quoteContainerWidth);
+        }
       }
     </script>
   </body>

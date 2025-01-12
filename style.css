@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -67,7 +70,9 @@ nav li:first-child {
   align-items: center;
 }
 .sidebar {
-  display: none;
+  display: block;
+  right: -50%;
+  transition: all 1s;
 }
 /* header */
 .headh1 {
@@ -91,8 +96,8 @@ nav li:first-child {
 /* main */
 
 .sectionmain {
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 85vw;
+  margin: 0 auto 0 auto;
   padding-top: 10%;
 }
 .floatr {
@@ -114,52 +119,156 @@ p {
 .mainsec {
   padding-bottom: 40px;
 }
-/* CARD */
-.card {
-  width: 25vw;
-  height: 75vh;
-  background: #071828;
-  position: relative;
+.quote-mastercontainer {
+  height: fit-content;
   display: flex;
-  margin: 2.5vw;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.quote-mastercontainer button {
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: beige;
+  color: darkslategrey;
+}
+.quote-container {
+  width: 75vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+.quote {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  border-radius: 20px;
+  justify-items: start;
+  height: fit-content;
+  scroll-snap-align: center;
+  padding: 2.5vw;
+  margin: 2.5vw;
+  background-color: darkslategray;
 }
-.card h2 {
-  z-index: 1;
-  color: white;
-  font-size: 2em;
+.person {
+  height: auto;
 }
-.card::before {
+.quote-position {
+  color: blueviolet;
+}
+.quote-text {
+  display: block;
+  color: coral;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.quote::after {
   content: "";
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 100px;
-  background-image: linear-gradient(
-    180deg,
-    rgb(0, 103, 255),
-    rgb(255, 48, 255)
-  );
-  height: 130%;
-  animation: borderanime 3s linear infinite;
-  transition: all 0.2s linear;
+  background-image: conic-gradient(from var(--angle), transparent 75%, red);
+  animation: border-animation 2.5s linear infinite;
+  z-index: -1;
 }
-@keyframes borderanime {
+@keyframes border-animation {
   from {
-    transform: rotate(0deg);
+    --angle: 0deg;
   }
   to {
-    transform: rotate(360deg);
+    --angle: 360deg;
   }
 }
-.card::after {
-  content: "";
-  position: absolute;
-  background: #07182e;
-  inset: 5px;
-  border-radius: 15px;
+@media (orientation: portrait) {
+  .hideonmobile {
+    display: none;
+  }
+  .showonmobile {
+    display: block;
+    font-size: 2.8vw;
+  }
+  .sectionmain img {
+    display: block;
+  }
+  .floatl,
+  .floatr {
+    height: auto;
+    width: 60vw;
+  }
+  p {
+    font-size: 5vw;
+  }
+  .quote-mastercontainer {
+    width: 85vw;
+  }
+  .quote-mastercontainer button {
+    width: 5vw;
+    padding: 1.25vw;
+    margin: 1.25vw;
+    font-size: 5vw;
+    border-radius: 2vw;
+  }
+  .quote {
+    width: 65vw;
+    border-radius: 5vw;
+  }
+  .person {
+    width: 65vw;
+    border-radius: 5vw;
+  }
+  .quote::after {
+    padding: 1vw;
+    border-radius: 5vw;
+  }
 }
-.card-container {
-  display: flex;
+@media (orientation: landscape) {
+  .nav-img {
+    height: 8vh;
+  }
+  nav li {
+    font-size: 2vw;
+  }
+  .quote-mastercontainer {
+    width: 85vw;
+  }
+  .quote-mastercontainer button {
+    width: 3vw;
+    padding: 1vw;
+    margin: 1vw;
+    font-size: 2vw;
+    border-radius: 1vw;
+  }
+  .quote {
+    width: 25vw;
+    border-radius: 2.5vw;
+  }
+  .person {
+    width: 15vw;
+    border-radius: 2.5vw;
+  }
+  .quote-position {
+    font-size: 1.5vw;
+  }
+  .quote-text {
+    font-size: 1vw;
+  }
+  .quote::after {
+    padding: 0.5vw;
+    border-radius: 2.5vw;
+  }
 }
