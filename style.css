@@ -265,8 +265,8 @@ p {
     border-radius: 2.5vw;
   }
 }
-@media (max-width:736px){
+@media (min-width:736px){
   .nav-img{
-    width: 3.5vw;
+    height: 5vh;
   }
 }
