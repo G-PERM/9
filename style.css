@@ -70,6 +70,7 @@ nav li:first-child {
   height: 13vh;
   display: flex;
   align-items: center;
+  background-position: center;
 }
 /* header */
 .headh1 {
