@@ -194,6 +194,9 @@ p {
   }
 }
 @media (orientation: portrait) {
+  .nav-img{
+    height: 7vh;
+  }
   .hideonmobile {
     display: none;
   }
@@ -263,10 +266,5 @@ p {
   .quote::after {
     padding: 0.5vw;
     border-radius: 2.5vw;
-  }
-}
-@media (min-width: 400px){
-  .nav-img{
-    height: 7vh;
   }
 }
