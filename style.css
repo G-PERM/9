@@ -267,6 +267,6 @@ p {
 }
 @media (max-width:736px){
   .nav-img{
-    height: 7vh;
+    width: 5vw;
   }
 }
