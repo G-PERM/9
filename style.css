@@ -45,7 +45,7 @@ nav li:first-child {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 50vw;
   z-index: 999;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.288);
@@ -54,6 +54,8 @@ nav li:first-child {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  right: -50%;
+  transition: all 1s;
 }
 .sidebar li {
   width: 100%;
@@ -68,11 +70,6 @@ nav li:first-child {
   height: 13vh;
   display: flex;
   align-items: center;
-}
-.sidebar {
-  display: block;
-  right: -50%;
-  transition: all 1s;
 }
 /* header */
 .headh1 {
@@ -127,6 +124,7 @@ p {
   text-align: center;
   padding: 0;
   margin: 0;
+  width: 85vw;
 }
 .quote-mastercontainer button {
   height: fit-content;
@@ -208,13 +206,10 @@ p {
   .floatl,
   .floatr {
     height: auto;
-    width: 60vw;
+    width: 85vw;
   }
   p {
     font-size: 5vw;
-  }
-  .quote-mastercontainer {
-    width: 85vw;
   }
   .quote-mastercontainer button {
     width: 5vw;
@@ -242,9 +237,6 @@ p {
   }
   nav li {
     font-size: 2vw;
-  }
-  .quote-mastercontainer {
-    width: 85vw;
   }
   .quote-mastercontainer button {
     width: 3vw;
