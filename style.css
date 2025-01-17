@@ -194,7 +194,7 @@ p {
   }
 }
 @media (orientation: portrait) {
-  .nav-img{
+  .nav-img {
     height: 7vh;
   }
   .hideonmobile {
